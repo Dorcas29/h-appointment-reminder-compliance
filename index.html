@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Compliance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="#">Welcome</a>
+            <a href="#">About Us</a>
+            <a href="#">Doctors</a>
+            <a href="#">Dentist</a>
+            <a href="#">Reviews</a>
+            <input type="text" id="searchInput" placeholder="Search Special Diet" oninput="searchContent()">
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <aside class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Phone: 0677170408</p>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/yourpage" target="_blank">Facebook Page</a></p>
+            <p>Twitter: <a href="https://twitter.com/yourhandle" target="_blank">Twitter Handle</a></p>
+        </aside>
+        
+        <div class="login-container">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+                    <small class="error-message" id="loginError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerUsername">Username:</label>
+                    <input type="text" id="registerUsername" name="registerUsername" required>
+                    <small class="error-message" id="registerError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" name="registerPassword" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; Dorcas Tatenda Mutyavaviri. All Rights Reserved 2024.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
